@@ -7,6 +7,8 @@
   "private": false,
   "license": "AGPL-3.0-or-later",
   "scripts": {
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && npx quasar build -P -m pwa",
+    "dev": "export NODE_OPTIONS=--openssl-legacy-provider && npx quasar dev -m pwa",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
